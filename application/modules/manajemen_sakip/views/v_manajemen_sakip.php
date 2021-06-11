@@ -7,7 +7,8 @@
       <h3 class="text-themecolor m-b-0 m-t-0">Beranda</h3>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="<?= site_url('beranda') ?>">Beranda</a></li>
-        <li class="breadcrumb-item active">Manajemen Data Sakip</li>
+        <li class="breadcrumb-item">Manajemen Data Sakip</li>
+        
       </ol>
     </div>
   </div>
@@ -46,9 +47,7 @@
                 <th>Trisia Widya M</th>
                 <th>Kepala Badan</th>
                 <th class="text-center">
-                  <a href="<?=base_url('Manajemen_sakip/tambah_sakip');?>"><button type="button" class="btn btn-primary btn-circle"><i class="fa fa-plus"></i> </button></a>
                   <a href="<?=base_url();?>Manajemen_sakip/detail_sakip"><button type="button" class="btn btn-warning btn-circle"><i class="fa fa-list"></i> </button></a>
-
                 </th>
               </tr>
               <tr>
@@ -56,17 +55,15 @@
                 <th>Trisia Widya M</th>
                 <th>Kepala Badan</th>
                 <th class="text-center">
-                  <button type="button" class="btn btn-primary btn-circle"><i class="fa fa-plus"></i> </button>
-                  <button type="button" class="btn btn-warning btn-circle"><i class="fa fa-list"></i> </button>
-
-                </th>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
+                  <a href="<?=base_url('Manajemen_sakip/tambah_sakip');?>"><button type="button" class="btn btn-primary btn-circle"><i class="fa fa-plus"></i> </button></a>
+               </th>
+             </tr>
+           </tbody>
+         </table>
+       </div>
+     </div>
+   </div>
+ </div>
 </div>    
 </div>
 <!-- modal -->

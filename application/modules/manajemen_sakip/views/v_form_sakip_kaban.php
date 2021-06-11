@@ -7,10 +7,10 @@
               <!-- ============================================================== -->
               <div class="row page-titles">
                 <div class="col-md-5 col-8 align-self-center">
-                  <h3 class="text-themecolor m-b-0 m-t-0">Beranda</h3>
+                  <h3 class="text-themecolor m-b-0 m-t-0">Form Tambah Data PK dan IKI</h3>
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item">Beranda</li>
-                    <li class="breadcrumb-item">Manajemen Sakip</li>
+                    <li class="breadcrumb-item"><a href="<?= site_url('beranda') ?>">Beranda</a></li>
+                    <li class="breadcrumb-item"><a href="<?= site_url('Manajemen_sakip') ?>">Manajemen Sakip</a></li>
                     <li class="breadcrumb-item active">Tambah Data Sakip</li>
                   </ol>
                 </div>

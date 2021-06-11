@@ -8,9 +8,9 @@ class Cetak extends MX_Controller
 	
 	function __construct(){
 		parent::__construct();
-        if (!$this->session->userdata('is_login')) {
-            redirect('login');
-        }
+        // if (!$this->session->userdata('is_login')) {
+        //     redirect('login');
+        // }
 	}
 
 	function laporan_aktivitas_bulanan(){

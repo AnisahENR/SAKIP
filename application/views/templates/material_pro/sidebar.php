@@ -24,20 +24,28 @@
                 <li>
                     <a href="<?=site_url('beranda')?>" aria-expanded="false"><i class="fas fa-home"></i></i><span class="hide-menu"> Beranda</span></a>
                 </li>
-                <li>
-                    <a href="<?=site_url('profil')?>" aria-expanded="false"><i class="fas fa-user"></i></i><span class="hide-menu"> Profil</span></a>
-                </li>
+                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-laptop-windows"></i><span class="hide-menu">Master Data</span></a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li><a href="#">Master Perangkat Daerah</a></li>
+                        <li><a href="#">Master Golongan</a></li>
+                        <li><a href="#">Master Jabatan</a></li>
 
+                    </ul>
+                </li>
                 <li>
                     <a href="<?=site_url('Admin')?>" aria-expanded="false"><i class="fas fa-cogs"></i><span class="hide-menu"> Manajemen Admin</span></a>
                 </li>
                 <li>
                     <a href="<?=site_url('Pegawai')?>" aria-expanded="false"><i class="fas fa-list-ul"></i></i><span class="hide-menu"> Daftar Pegawai</span></a>
                 </li>
-                 <li>
-                    <a href="<?=site_url('tentang')?>" aria-expanded="false"><i class="fas fa-print"></i></i><span class="hide-menu"> Cetak Dokumen</span></a>
+          
+                <li>
+                    <a href="<?=site_url('Manajemen_sakip')?>" aria-expanded="false"><i class="fas fa-list-ul"></i></i><span class="hide-menu"> Manajemen SAKIP</span></a>
                 </li>
-                 <li>
+               <!--  <li>
+                    <a href="<?//=site_url('cetak/laporan_aktivitas_bulanan')?>" aria-expanded="false"><i class="fas fa-print"></i></i><span class="hide-menu"> Cetak Dokumen</span></a>
+                </li> -->
+                <li>
                     <a href="<?=site_url('tentang')?>" aria-expanded="false"><i class="fas fa-info"></i></i><span class="hide-menu"> Tentang Kami</span></a>
                 </li>
             </ul>

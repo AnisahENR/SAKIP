@@ -34,10 +34,10 @@
                         <div id="lastmonthchart"></div>
                       </div>
                     </div>
-                    <div class="">
+                    <!-- <div class="">
                       <button class="right-side-toggle waves-effect waves-light btn-success btn btn-circle btn-sm pull-right m-l-10"><i
                         class="ti-settings text-white"></i></button>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>
@@ -114,7 +114,11 @@
                                     <!-- Step 2 -->
                                     <h6>Sasaran & Program</h6>
                                     <section>
+
                                       <div class="row">
+                                        <div class="col-md-12">
+                                          <button class=" float-right btn btn-primary" type="button" onclick="form_sasaran();">Tambah Data </button>      
+                                        </div>
                                         <div class="col-md-6">
                                           <div class="form-group">
                                             <label for="jobTitle2">Sasaran Strategis :</label>
@@ -160,42 +164,46 @@
                                             </div>
                                           </div>
                                         </div>
+                                        <br/>
+                                        <hr>
+                                        <div id="form_sasaran"></div>
+                                        <br/>
+
                                       </section>
                                       <!-- Step 3 -->
                                       <h6>Sub Kegiatan</h6>
                                       <section>
-                                        <div class="row">
+                                        <div class="row" >
                                           <div class="col-md-12">
-                                            <div class="form-group">
-                                              <label for="wint1">Sub Kegiatan :</label>
-                                              <textarea type="text" class="form-control" id="sub_kegiatan"></textarea> </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                              <div class="form-group">                       
-                                                <label for="wintType1">Anggaran :</label>
-                                                <select class="custom-select form-control" id="sub_kegiatan" data-placeholder="Type to search cities" name="sub_kegiatan">
-                                                  <option value="Banquet">Easy</option>
-                                                  <option value="Fund Raiser">Difficult</option>
-                                                  <option value="Dinner Party">Hard</option>
-                                                </select>
-                                              </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                              <div class="form-group">
-                                                <label for="wintType1">Keterangan :</label>
-                                                <select class="custom-select form-control" id="keterangan_sub" data-placeholder="Type to search cities" name="keterangan_sub">
-                                                  <option value="Banquet">Easy</option>
-                                                  <option value="Fund Raiser">Difficult</option>
-                                                  <option value="Dinner Party">Hard</option>
-                                                </select>
-                                              </div>
+                                            <button class=" float-right btn btn-primary" type="button" onclick="form_sakip();">Tambah Sub Kegiatan <i class="fa fa-plus"></i> </button>      
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                         <div class="col-md-12">
+                                          <div class="form-group">
+                                            <label for="wint1">Sub Kegiatan :</label>
+                                            <textarea type="text" class="form-control" id="sub_kegiatan"></textarea> </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <div class="form-group">                       
+                                              <label for="anggaran">Anggaran :</label>
+                                              <input type="text" name="anggaran" class="form-control">
                                             </div>
                                           </div>
-                                          <button class="btn btn-success" type="button" onclick="form_sakip();"><i class="fa fa-plus"></i></button>
-                                          <div id="form_sakip"></div>
-                                        </section>
-                                        <!-- Step 4 -->
-                                        <!--  <h6>Step 4</h6> -->
+                                          <div class="col-md-6">
+                                            <div class="form-group">
+                                              <label for="wintType1">Keterangan :</label>
+                                              <input type="text" name="keterangan" class="form-control">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <br/>
+                                        <hr>
+                                        <div id="form_sakip"></div>
+                                        <br/>
+                                      </section>
+                                      <!-- Step 4 -->
+                                      <!--  <h6>Step 4</h6> -->
                                        <!--  <section>
                                           <div class="row">
                                             <div class="col-md-6">

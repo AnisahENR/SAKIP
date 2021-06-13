@@ -56,6 +56,80 @@
             }
         })
     </script>
+
+    <script>
+        var room_sasaran = 1;
+
+        function form_sasaran(){
+            room_sasaran++;
+            var objTo2 = document.getElementById('form_sasaran')
+            var divtest2 = document.createElement("div");
+            divtest2.setAttribute("class", "form-group removeclass" + room_sasaran);
+            var rdiv = 'removeclass' + room_sasaran;
+            divtest2.innerHTML= '<div class="row">'+
+            '<div class="col-md-6">'+
+            '<div class="form-group">'+
+            '<label for="jobTitle2">Sasaran Strategis :</label>'+
+            '<textarea type="text" class="form-control" id="sasaran">'+
+            '</textarea>'+
+            '</div>'+
+            '</div>'+
+            '<div class="col-md-6">'+
+            '<div class="form-group">'+
+            '<label for="webUrl3">Indikator Kinerja :</label>'+
+            '<textarea type="url" class="form-control" id="indikator_kinerja" name="indikator_kinerja"></textarea> </div>'+
+            '</div>'+
+            '<div class="col-md-6">'+
+            '<div class="form-group">'+
+            '<label for="shortDescription3">Satuan :</label>'+
+            '<input type="text" name="satuan" class="form-control">'+
+
+            '</div>'+
+            '</div>'+
+            '<div class="col-md-6">'+
+            '<div class="form-group">'+
+            '<label for="shortDescription3">Target :</label>'+
+            '<input type="text" name="target" class="form-control">'+
+            '</div>'+
+            '</div>'+
+            '<div class="col-md-10">'+
+            '<div class="form-group">'+
+            '<label for="shortDescription3">Program :</label>'+
+            '<textarea type="text" name="target" class="form-control">'+
+            '</textarea>'+
+            '</div>'+
+            '</div>'+
+
+             '<div class="col-md-2">'+
+            '<div class="input-group-append"> <button class="btn btn-danger" type="button" onclick="remove_sasaran(' + room_sasaran + ');" style="margin-top:32px;"> <i class="fa fa-minus"></i> Remove</button> '+
+            '<button class="btn btn-primary" type="button" onclick="form_sasaran()" style="margin-top:32px;margin-left:2px;"> <i class="fa fa-plus"></i> Add</button>'+
+            '</div></div>'+
+
+            // bagian anggaran dan keterangan
+            '<div class="col-md-6">'+
+            '<div class="form-group">'+
+            '<label for="shortDescription3">Anggaran :</label>'+
+            '<input type="number" name="target" class="form-control">'+  
+            '</div>'+
+            '</div>'+
+            '<div class="col-md-6">'+
+            '<div class="form-group">'+
+            '<label for="shortDescription3">Keterangan :</label>'+
+            '<input type="number" name="target" class="form-control">'+  
+            '</div>'+
+            '</div>'+
+            '</div>'+
+            '<br><hr>';
+
+
+            objTo2.appendChild(divtest2)
+        }
+
+        function remove_sasaran(rid) {
+            $('.removeclass' + rid).remove();
+        }
+
+    </script>
     <script>
         var room = 1;
 
@@ -66,7 +140,33 @@
             var divtest = document.createElement("div");
             divtest.setAttribute("class", "form-group removeclass" + room);
             var rdiv = 'removeclass' + room;
-            divtest.innerHTML = '<div class="row"><div class="col-sm-3 nopadding"><div class="form-group"> <input type="text" class="form-control" id="Schoolname" name="Schoolname[]" value="" placeholder="School name"></div></div><div class="col-sm-3 nopadding"><div class="form-group"> <input type="text" class="form-control" id="Major" name="Major[]" value="" placeholder="Major"></div></div><div class="col-sm-3 nopadding"><div class="form-group"> <input type="text" class="form-control" id="Degree" name="Degree[]" value="" placeholder="Degree"></div></div><div class="col-sm-3 nopadding"><div class="form-group"><div class="input-group"> <select class="form-control" id="educationDate" name="educationDate[]"><option value="">Date</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option> </select><div class="input-group-append"> <button class="btn btn-danger" type="button" onclick="remove_education_fields(' + room + ');"> <i class="fa fa-minus"></i> </button></div></div></div></div><div class="clear"></div></row>';
+            divtest.innerHTML= ' <div class="row">'+
+            '<div class="col-md-10">'+
+            '<div class="form-group">'+
+            '<label for="wint1">Sub Kegiatan :</label>'+
+            '<textarea type="text" class="form-control" id="sub_kegiatan"></textarea>'+
+            '</div>'+
+            '</div>'+
+
+            '<div class="col-md-2">'+
+            '<div class="input-group-append"> <button class="btn btn-danger" type="button" onclick="remove_education_fields(' + room + ');" style="margin-top:32px;"> <i class="fa fa-minus"></i> Remove</button> '+
+            '<button class="btn btn-primary" type="button" onclick="form_sakip()" style="margin-top:32px;margin-left:2px;"> <i class="fa fa-plus"></i> Add</button>'+
+            '</div></div>'+
+            // untuk bagian anggaran dan keterangan
+            '<div class="col-md-6">'+
+            '<div class="form-group">'+                       
+            '<label for="anggaran">Anggaran :</label>'+
+            '<input type="text" name="anggaran" class="form-control">'+
+            '</div>'+
+            '</div>'+
+            '<div class="col-md-6">'+
+            '<div class="form-group">'+
+            '<label for="wintType1">Keterangan :</label>'+
+            '<input type="text" name="keterangan" class="form-control">'+
+            '</div>'+
+            '</div>'+
+            '</div>'+
+            '<br><hr>';
 
             objTo.appendChild(divtest)
         }

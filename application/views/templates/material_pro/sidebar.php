@@ -26,9 +26,9 @@
                 </li>
                 <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-laptop-windows"></i><span class="hide-menu">Master Data</span></a>
                     <ul aria-expanded="false" class="collapse">
-                        <li><a href="#">Master Perangkat Daerah</a></li>
-                        <li><a href="#">Master Golongan</a></li>
-                        <li><a href="#">Master Jabatan</a></li>
+                        <li><a href="<?=base_url()?>Master_data">Master Perangkat Daerah</a></li>
+                        <li><a href="<?=base_url()?>Master_data/view_master_golongan">Master Golongan</a></li>
+                        <li><a href="<?=base_url()?>Master_data/view_master_jabatan">Master Jabatan</a></li>
 
                     </ul>
                 </li>

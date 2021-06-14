@@ -1,77 +1,63 @@
-<?php
+<?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Manajemen_sakip extends CI_Controller {
+class Master_data extends CI_Controller {
 
 	function __construct() {
 		parent::__construct();
-
+		$this->load->library('form_validation');
+		// $this->load->model('m_admin');
+		// $this->load->model('m_skpd');
+		// if (!$this->session->userdata('is_login') || $this->session->userdata('author_id') != 1) {
+		// 	redirect('login');
+		// }
 	}
-	
-	public function index()
-	{
+
+	function index() {
+		
 		$this->load->view('templates/material_pro/head');
-
-		// insert custom header here
 		$this->load->view('header-custom');
-
 		$this->load->view('templates/material_pro/header');
 		$this->load->view('templates/material_pro/sidebar');
 
 		//insert view here
-		$this->load->view('v_manajemen_sakip');
-
+		$this->load->view('v_master_perangkat_daerah');
 		$this->load->view('templates/material_pro/footer-1');
-
-		// insert custom footer here
 		$this->load->view('footer-custom');
-
 		$this->load->view('templates/material_pro/footer-2');
 	}
 
-	public function tambah_sakip(){
+	function view_master_golongan(){
+
+
 		$this->load->view('templates/material_pro/head');
-
-		// insert custom header here
 		$this->load->view('header-custom');
-
 		$this->load->view('templates/material_pro/header');
 		$this->load->view('templates/material_pro/sidebar');
 
 		//insert view here
-		$this->load->view('v_form_sakip_kaban');
-
+		$this->load->view('v_master_golongan');
 		$this->load->view('templates/material_pro/footer-1');
-
-		// insert custom footer here
 		$this->load->view('footer-custom');
-
 		$this->load->view('templates/material_pro/footer-2');
+
+
+
 	}
 
+	function view_master_jabatan(){
 
-	public function detail_sakip(){
+
 		$this->load->view('templates/material_pro/head');
-
-		// insert custom header here
 		$this->load->view('header-custom');
-
 		$this->load->view('templates/material_pro/header');
 		$this->load->view('templates/material_pro/sidebar');
 
 		//insert view here
-		$this->load->view('v_detail_sakip');
-
+		$this->load->view('v_master_jabatan');
 		$this->load->view('templates/material_pro/footer-1');
-
-		// insert custom footer here
 		$this->load->view('footer-custom');
-
 		$this->load->view('templates/material_pro/footer-2');
-	}
-
-
-	private function tambah_data_kaban($data){
 
 
 

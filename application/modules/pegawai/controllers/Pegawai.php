@@ -32,5 +32,27 @@ class Pegawai extends CI_Controller
 
 		$this->load->view('templates/material_pro/footer-2');
 	}
+
+
+	public function tambah_pegawai(){
+		$this->load->view('templates/material_pro/head');
+
+		//insert custom header here
+		$this->load->view('header-custom');
+
+		$this->load->view('templates/material_pro/header');
+		$this->load->view('templates/material_pro/sidebar');
+
+		//insert view here
+		$this->load->view('v_form_tambah_pegawai');
+
+		$this->load->view('templates/material_pro/footer-1');
+
+		// insert custom footer here
+		$this->load->view('footer-custom');
+
+		$this->load->view('templates/material_pro/footer-2');
+
+	}
 }
 

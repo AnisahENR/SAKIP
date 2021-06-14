@@ -33,13 +33,13 @@
                         <b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Light Logo icon -->
-                            <img src="<?=base_url()?>_assets/material_pro/assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                            <img src="<?=base_url()?>_assets/material_pro/assets/images/logo_bappeda2.png" alt="homepage" class="light-logo" width="30px" />
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
                         <span>
                          <!-- Light Logo text -->    
-                         <img src="<?=base_url()?>_assets/material_pro/assets/images/logo-light-text.png" class="light-logo" alt="Beranda SILAT" /></span> </a>
+                         <img src="<?=base_url()?>_assets/material_pro/assets/images/nama_logo.jpg" class="light-logo" alt="Beranda SILAT" width="50px" /></span> </a>
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->

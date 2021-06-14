@@ -6,8 +6,8 @@ class Admin extends CI_Controller {
 	function __construct() {
 		parent::__construct();
 		$this->load->library('form_validation');
-		$this->load->model('m_admin');
-		$this->load->model('m_skpd');
+		// $this->load->model('m_admin');
+		// $this->load->model('m_skpd');
 		// if (!$this->session->userdata('is_login') || $this->session->userdata('author_id') != 1) {
 		// 	redirect('login');
 		// }
